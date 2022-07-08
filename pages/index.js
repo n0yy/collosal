@@ -16,14 +16,16 @@ export default function Home() {
         <title>Collosal</title>
       </Head>
       <Layout>
-        <Jumbotron />
-        <FeatureCard />
-        <SupportLogo />
-        <HowWeWork />
-        <OurTeam />
-        <Projects />
-        <Services />
-        <Testimonial />
+        <>
+          <Jumbotron />
+          <FeatureCard />
+          <SupportLogo />
+          <HowWeWork />
+          <OurTeam />
+          <Projects />
+          <Services />
+          <Testimonial />
+        </>
       </Layout>
     </>
   );

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function OutTeam() {
   return (
@@ -11,7 +12,7 @@ export default function OutTeam() {
       <div className="w-5/12 space-y-3">
         <h3 className="text-green-300 font-semibold">OUR TEAM</h3>
         <h1 className="leading-10 text-white text-3xl font-bold">
-          We&apos;re a team of designers, engineers and analysts
+          We& apos;re a team of designers, engineers and analysts
         </h1>
         <p className="text-gray-300 leading-7">
           Our team consists of many creative people. We are committed to
@@ -20,7 +21,7 @@ export default function OutTeam() {
         </p>
       </div>
       <div className="w-6/12">
-        <img src="/Team Illustration.png" alt="Team Illustration" />
+        <Image src="/Team Illustration.png" alt="Team Illustration" />
       </div>
     </motion.section>
   );
