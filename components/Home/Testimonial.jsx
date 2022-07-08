@@ -41,7 +41,10 @@ export default function Testimonial() {
       {/* card */}
       <div className="flex items-center justify-between mt-20 space-x-5">
         {testimonials.map((testimonial) => (
-          <div className="w-4/12 bg-white/10 p-10 rounded-lg shadow-2xl border border-indigo-500/75">
+          <div
+            className="w-4/12 bg-white/10 p-10 rounded-lg shadow-2xl border border-indigo-500/75"
+            key={testimonial.id}
+          >
             {/* header  */}
             <header className="text-center">
               <Image
