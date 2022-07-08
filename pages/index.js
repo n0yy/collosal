@@ -6,6 +6,8 @@ import SupportLogo from "../components/Home/SupportLogo";
 import HowWeWork from "../components/Home/HowWeWork";
 import OurTeam from "../components/Home/OurTeam";
 import Projects from "../components/Home/Projects";
+import Services from "../components/Home/Services";
+import Testimonial from "../components/Home/Testimonial";
 
 export default function Home() {
   return (
@@ -20,6 +22,8 @@ export default function Home() {
         <HowWeWork />
         <OurTeam />
         <Projects />
+        <Services />
+        <Testimonial />
       </Layout>
     </>
   );

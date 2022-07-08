@@ -1,5 +1,5 @@
-import Image from "next/image";
 import Button from "../Button";
+import { motion } from "framer-motion";
 
 export default function Projects() {
   const projects = [
@@ -20,7 +20,12 @@ export default function Projects() {
   ];
 
   return (
-    <section className="my-32">
+    <motion.section
+      className="my-32"
+      initial={{ x: -100, opacity: 0.1 }}
+      whileInView={{ x: 0, opacity: 1, transition: { duration: 1 } }}
+      viewport={{ once: true }}
+    >
       <div className="text-center mx-64">
         <h6 className="text-green-400 text-sm mb-2">PROJECTS</h6>
         <h3 className="text-2xl text-white font-semibold">
@@ -49,6 +54,6 @@ export default function Projects() {
           </div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }
