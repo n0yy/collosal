@@ -5,6 +5,7 @@ import FeatureCard from "../components/Home/FeatureCard";
 import SupportLogo from "../components/Home/SupportLogo";
 import HowWeWork from "../components/Home/HowWeWork";
 import OurTeam from "../components/Home/OurTeam";
+import Projects from "../components/Home/Projects";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <SupportLogo />
         <HowWeWork />
         <OurTeam />
+        <Projects />
       </Layout>
     </>
   );

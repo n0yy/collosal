@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function FeatureCard() {
   const features = [
@@ -20,11 +21,18 @@ export default function FeatureCard() {
   ];
 
   return (
-    <section className="my-40 flex items-center justify-evenly">
+    <motion.section
+      className="my-40 flex items-center justify-evenly"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+    >
       {features.map((feature) => (
-        <div
-          className="w-72 h-64 bg-white/5 rounded-md p-7 shadow hover:shadow-2xl"
+        <motion.div
+          className="w-72 h-64 bg-white/5 rounded-md p-7 shadow hover:shadow-2xl cursor-pointer"
           key={feature.logoUrl}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
         >
           {/* logo */}
           <div className="w-7 h-7 bg-white/10 flex items-center justify-center mb-7">
@@ -35,8 +43,8 @@ export default function FeatureCard() {
             <h5 className="text-xl text-white">{feature.title}</h5>
             <p className="leading-7 text-gray-400">{feature.text}</p>
           </div>
-        </div>
+        </motion.div>
       ))}
-    </section>
+    </motion.section>
   );
 }

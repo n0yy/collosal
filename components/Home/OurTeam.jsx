@@ -1,6 +1,13 @@
+import { motion } from "framer-motion";
+
 export default function OutTeam() {
   return (
-    <section className="mt-32 flex items-center justify-between">
+    <motion.section
+      className="mt-32 flex items-center justify-between"
+      initial={{ x: 100, opacity: 0.1 }}
+      whileInView={{ x: 0, opacity: 1, transition: { duration: 1 } }}
+      viewport={{ once: true }}
+    >
       <div className="w-5/12 space-y-3">
         <h3 className="text-green-300 font-semibold">OUR TEAM</h3>
         <h1 className="leading-10 text-white text-3xl font-bold">
@@ -15,6 +22,6 @@ export default function OutTeam() {
       <div className="w-6/12">
         <img src="/Team Illustration.png" alt="Team Illustration" />
       </div>
-    </section>
+    </motion.section>
   );
 }

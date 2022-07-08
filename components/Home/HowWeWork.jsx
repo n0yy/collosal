@@ -1,9 +1,29 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function HowWeWork() {
+  const cardVariants = {
+    offscreen: {
+      y: 300,
+    },
+    onscreen: {
+      y: 50,
+      rotate: -10,
+      transition: {
+        type: "spring",
+        bounce: 0.4,
+        duration: 0.8,
+      },
+    },
+  };
   return (
-    <section className="mt-32 flex items-center justify-between">
-      <div className="w-1/2">
+    <motion.section
+      className="mt-32 flex items-center justify-between"
+      initial={{ x: -100, opacity: 0.1 }}
+      whileInView={{ x: 0, opacity: 1, transition: { duration: 1 } }}
+      viewport={{ once: true }}
+    >
+      <div className="w-1/2 -z-50">
         <Image
           src="/how_we_work.png"
           width={600}
@@ -22,6 +42,6 @@ export default function HowWeWork() {
           they are shipped.
         </p>
       </div>
-    </section>
+    </motion.section>
   );
 }

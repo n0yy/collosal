@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function SupportLogo() {
   const logos = [
@@ -9,10 +10,21 @@ export default function SupportLogo() {
     { logoUrl: "/logo/Facebook.png" },
   ];
   return (
-    <section className="border-y-[1px] border-white/20 py-7 flex items-center justify-evenly">
+    <motion.section
+      className="border-y-[1px] border-white/20 py-7 flex items-center justify-evenly"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+    >
       {logos.map((logo) => (
-        <Image src={logo.logoUrl} width={100} height={25} alt={logo.logoUrl} />
+        <Image
+          src={logo.logoUrl}
+          width={100}
+          height={25}
+          alt={logo.logoUrl}
+          key={logo.logoUrl}
+        />
       ))}
-    </section>
+    </motion.section>
   );
 }
