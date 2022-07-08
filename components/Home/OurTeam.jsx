@@ -21,7 +21,12 @@ export default function OutTeam() {
         </p>
       </div>
       <div className="w-6/12">
-        <Image src="/Team Illustration.png" alt="Team Illustration" />
+        <Image
+          src="/Team Illustration.png"
+          alt="Team Illustration"
+          width={510}
+          height={460}
+        />
       </div>
     </motion.section>
   );
