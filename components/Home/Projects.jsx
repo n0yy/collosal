@@ -1,5 +1,6 @@
 import Button from "../Button";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Projects() {
   const projects = [
@@ -37,7 +38,7 @@ export default function Projects() {
         {/* card */}
         {projects.map((project) => (
           <div className="w-5/12 space-y-5 min-h-min" key={project.title}>
-            <img
+            <Image
               src={project.imageUrl}
               alt="Mobile Project"
               width="500"

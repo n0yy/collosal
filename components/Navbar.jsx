@@ -7,7 +7,7 @@ export default function Navbar() {
   return (
     <nav className="flex items-center justify-between px-36 py-5 fixed top-0 w-full bg-white/5 backdrop-blur-sm shadow-lg z-50">
       {/* logo */}
-      <a className="flex items-center text-white space-x-3" href="/">
+      <Link className="flex items-center text-white space-x-3" href="/">
         <span>
           <Image
             src="/logo/Logo.png"
@@ -17,7 +17,7 @@ export default function Navbar() {
           />
         </span>
         <span className="text-lg font-bold">Collosal.</span>
-      </a>
+      </Link>
 
       {/* menu */}
       <Menu>
