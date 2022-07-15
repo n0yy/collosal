@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 
 export default function Jumbotron() {
   return (
-    <section className="mt-16">
+    <section className="mt-5 lg:mt-16">
       {/* bg */}
       <>
         <motion.div
-          className="absolute bg-orange-400/20 w-2/5 h-96 rounded-full blur-3xl -z-50 left-0 bottom-9"
+          className="absolute bg-orange-400/20 w-2/5 h-2/5 lg:h-96 rounded-full blur-3xl -z-50 left-0 bottom-9"
           animate={{ scale: [1, 1.3, 1.2, 1] }}
           transition={{
             duration: 2,
@@ -16,9 +16,9 @@ export default function Jumbotron() {
             repeat: Infinity,
           }}
         ></motion.div>
-        <div className="absolute bg-sky-400/20 w-2/5 h-96 rounded-full blur-3xl -z-50 left-64 top-0"></div>
+        <div className="absolute bg-sky-400/20 w-2/5 h-2/5 lg:h-96 rounded-full blur-3xl -z-50 left-10 lg:left-64 top-0"></div>
         <motion.div
-          className="absolute bg-pink-400/20 w-2/5 h-96 rounded-full blur-3xl -z-50 right-0 top-10"
+          className="absolute bg-pink-400/20 w-2/5 h-2/5 lg:h-96 rounded-full blur-3xl -z-50 right-0 top-10"
           animate={{ scale: [1, 0.7, 0.6, 1] }}
           transition={{
             duration: 2,
@@ -29,8 +29,8 @@ export default function Jumbotron() {
         ></motion.div>
       </>
       {/* end bg */}
-      <div className="text-center px-52 space-y-7">
-        <h2 className="font-semibold text-xl text-green-300">
+      <div className="text-clip lg:text-center px-5 lg:px-52 space-y-4 lg:space-y-7">
+        <h2 className="font-semibold text-md lg:text-xl text-green-300">
           CLIENT-DEVELOPMENT DRIVEN
         </h2>
         <h1 className="text-5xl font-bold text-white">

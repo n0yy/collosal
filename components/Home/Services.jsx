@@ -44,7 +44,7 @@ export default function Services() {
   return (
     <section className="bg-indigo-600/20 rounded-xl p-10">
       {/* title */}
-      <div className="text-center px-64 space-y-3">
+      <div className="text-center px-0 lg:px-64 space-y-3">
         <h3 className="text-green-400 text-sm uppercase font-bold">
           Our Services
         </h3>
@@ -53,7 +53,7 @@ export default function Services() {
         </h1>
       </div>
       {/* card */}
-      <div className="flex items-center justify-evenly mt-20">
+      <div className="block lg:flex items-center justify-evenly mt-20 space-y-10 lg:space-y-0">
         {ourServices.map((items) => (
           <motion.div
             whileHover={{ scale: 1.05 }}
@@ -63,7 +63,7 @@ export default function Services() {
                 : items.id === 2
                 ? "bg-blue-700"
                 : "bg-pink-600"
-            } bg-indigo-600 px-5 py-10 w-3/12 rounded-xl shadow-xl`}
+            } bg-indigo-600 px-5 py-10 w-full lg:w-3/12 rounded-xl shadow-xl`}
             key={items.id}
           >
             {/* header */}

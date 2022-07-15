@@ -27,17 +27,20 @@ export default function Projects() {
       whileInView={{ x: 0, opacity: 1, transition: { duration: 1 } }}
       viewport={{ once: true }}
     >
-      <div className="text-center mx-64">
+      <div className="text-center mx-0 lg:mx-64">
         <h6 className="text-green-400 text-sm mb-2">PROJECTS</h6>
         <h3 className="text-2xl text-white font-semibold">
           We have completed many amazing projects that you will not believe
         </h3>
       </div>
 
-      <div className="mt-20 flex items-center justify-evenly">
+      <div className="mt-20 flex flex-wrap items-center justify-evenly space-y-10">
         {/* card */}
         {projects.map((project) => (
-          <div className="w-5/12 space-y-5 min-h-min" key={project.title}>
+          <div
+            className="w-10/12 lg:w-5/12 space-y-5 min-h-min"
+            key={project.title}
+          >
             <Image
               src={project.imageUrl}
               alt="Mobile Project"

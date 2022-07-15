@@ -22,16 +22,16 @@ export default function FeatureCard() {
 
   return (
     <motion.section
-      className="my-40 flex items-center justify-evenly"
+      className="my-40 block lg:flex items-center justify-evenly space-y-5 lg:space-y-0"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
     >
       {features.map((feature) => (
         <motion.div
-          className="w-72 h-64 bg-white/5 rounded-md p-7 shadow hover:shadow-2xl cursor-pointer"
+          className="w-full h-max-content lg:w-72 lg:h-64 bg-white/5 rounded-md p-7 shadow hover:shadow-2xl cursor-pointer"
           key={feature.logoUrl}
-          whileHover={{ scale: 1.1 }}
+          whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.9 }}
         >
           {/* logo */}

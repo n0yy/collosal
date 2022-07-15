@@ -1,4 +1,9 @@
 import Image from "next/image";
+import Slider from "react-slick";
+import SliderSettings from "../../utils/SliderSettings";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function Testimonial() {
   const testimonials = [
@@ -30,7 +35,7 @@ export default function Testimonial() {
 
   return (
     <section className="my-32 text-white">
-      <header className="text-center px-72 space-y-3">
+      <header className="text-center px-0 lg:px-72 space-y-3">
         <span className="text-green-400 text-sm uppercase font-bold">
           testimonial
         </span>
@@ -39,29 +44,40 @@ export default function Testimonial() {
         </h3>
       </header>
       {/* card */}
-      <div className="flex items-center justify-between mt-20 space-x-5">
-        {testimonials.map((testimonial) => (
-          <div
-            className="w-4/12 bg-white/10 p-10 rounded-lg shadow-2xl border border-indigo-500/75"
-            key={testimonial.id}
-          >
-            {/* header  */}
-            <header className="text-center">
-              <Image
-                src={testimonial.avatarUrl}
-                width={90}
-                height={90}
-                alt=""
-              />
-              <h3 className="text-xl font-bold mb-1">{testimonial.name}</h3>
-              <h6 className="text-xs text-gray-400">{testimonial.jobTitle}</h6>
-            </header>
-            {/* message */}
-            <p className="text-center mt-5 text-sm font-extralight text-gray-300 leading-6 tracking-wide">
-              {`"${testimonial.message}"`}
-            </p>
-          </div>
-        ))}
+      <div className="mt-20 relative">
+        {/* background blop */}
+        <div className="absolute bg-pink-400/20 blur-xl -z-50 left-0 w-72 h-72 lg:w-80 lg:h-80 rounded-full animate-pulse"></div>
+        <div className="absolute bg-lime-400/20 blur-xl -z-50 w-3/4 lg:w-96 h-3/4 lg:h-96 rounded-full animate-pulse right-1/3"></div>
+        <div className="absolute bg-sky-400/20 blur-xl -z-50 w-72 lg:w-80 h-72 lg:h-80 rounded-full animate-pulse right-0"></div>
+
+        <div className="px-5">
+          <Slider {...SliderSettings}>
+            {testimonials.map((testimonial) => (
+              <div
+                className="h-96 bg-white/10 p-10 rounded-lg shadow-2xl border border-indigo-500/75 backdrop-blur-md mb-10"
+                key={testimonial.id}
+              >
+                {/* header  */}
+                <header className="text-center">
+                  <Image
+                    src={testimonial.avatarUrl}
+                    width={90}
+                    height={90}
+                    alt=""
+                  />
+                  <h3 className="text-xl font-bold mb-1">{testimonial.name}</h3>
+                  <h6 className="text-xs text-gray-400">
+                    {testimonial.jobTitle}
+                  </h6>
+                </header>
+                {/* message */}
+                <p className="text-center mt-5 text-sm font-extralight text-gray-300 leading-6 tracking-wide">
+                  {`"${testimonial.message}"`}
+                </p>
+              </div>
+            ))}
+          </Slider>
+        </div>
       </div>
     </section>
   );

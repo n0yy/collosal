@@ -11,7 +11,7 @@ export default function SupportLogo() {
   ];
   return (
     <motion.section
-      className="border-y-[1px] border-white/20 py-7 flex items-center justify-evenly"
+      className="border-y-[1px] border-white/20 py-7 flex flex-wrap gap-6 items-center justify-evenly"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}

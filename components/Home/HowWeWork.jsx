@@ -18,12 +18,12 @@ export default function HowWeWork() {
   };
   return (
     <motion.section
-      className="mt-32 flex items-center justify-between"
+      className="mt-32 block lg:flex items-center justify-between mx-5 lg:mx-0"
       initial={{ x: -100, opacity: 0.1 }}
       whileInView={{ x: 0, opacity: 1, transition: { duration: 1 } }}
       viewport={{ once: true }}
     >
-      <div className="w-1/2 -z-50">
+      <div className="w-full lg:w-1/2 -z-50">
         <Image
           src="/how_we_work.png"
           width={600}
@@ -31,7 +31,7 @@ export default function HowWeWork() {
           alt="How We Work"
         />
       </div>
-      <div className="space-y-3 w-1/2">
+      <div className="space-y-3 w-full mt-5 lg:mt-0 lg:w-1/2">
         <h3 className="text-green-300 font-semibold">HOW WE WORK?</h3>
         <h1 className="text-3xl font-bold text-white leading-10">
           Everything is well planned, well designed and developed wholeheartedly
