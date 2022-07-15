@@ -28,12 +28,12 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="text-white mx-36">
-      <div className="border-y border-white/10 py-12 flex items-center justify-evenly">
-        <h3 className="text-2xl font-bold w-6/12">
+    <footer className="text-white mx-5 lg:mx-36">
+      <div className="border-y border-white/10 py-12 block lg:flex items-center justify-evenly">
+        <h3 className="text-2xl font-bold w-full lg:w-6/12">
           {`We've prepared everything, it's time for you to tell the problem`}
         </h3>
-        <div className="w-4/12 space-x-3">
+        <div className="w-full mt-5 mx-auto lg:w-4/12 space-x-3">
           <Button
             text="Send Quote"
             href="/send-quote"
@@ -47,8 +47,8 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="my-16 flex items-start justify-between">
-        <div>
+      <div className="my-10 lg:my-16 flex flex-wrap items-start justify-between">
+        <div className="order-last lg:order-1">
           <Link href="/">
             <span className="space-x-2">
               <Image
