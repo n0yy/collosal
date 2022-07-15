@@ -31,7 +31,7 @@ export default function Footer() {
     <footer className="text-white mx-36">
       <div className="border-y border-white/10 py-12 flex items-center justify-evenly">
         <h3 className="text-2xl font-bold w-6/12">
-          We've prepared everything, it's time for you to tell the problem
+          {`We've prepared everything, it's time for you to tell the problem`}
         </h3>
         <div className="w-4/12 space-x-3">
           <Button
@@ -75,7 +75,7 @@ export default function Footer() {
           <ul className="mt-3 space-y-3">
             {services.map((service) => (
               <li className="text-xs text-white/60" key={service.id}>
-                <a href="/">{service.text}</a>
+                <a href="">{service.text}</a>
               </li>
             ))}
           </ul>
