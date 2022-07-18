@@ -80,10 +80,10 @@ export default function Navbar() {
               />
             </svg>
           </span>
-          <MenuItem href="#services" text="Services" />
-          <MenuItem href="#about" text="About" />
-          <MenuItem href="#how-we-work" text="How We Work" />
-          <MenuItem href="#project" text="Project" />
+          <MenuItem href="/services" text="Services" />
+          <MenuItem href="/about" text="About" />
+          <MenuItem href="/how-we-work" text="How We Work" />
+          <MenuItem href="/project" text="Project" />
         </div>
       )}
     </>
