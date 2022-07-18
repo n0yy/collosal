@@ -47,7 +47,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="my-10 lg:my-16 flex flex-wrap items-start justify-between">
+      <div className="my-10 lg:my-16 flex flex-wrap items-start justify-evenly gap-10">
         <div className="order-last lg:order-1">
           <Link href="/">
             <span className="space-x-2">
