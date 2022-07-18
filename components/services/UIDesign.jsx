@@ -12,8 +12,8 @@ export default function UIDesign() {
       <div className="space-y-3 w-full lg:w-5/12 mt-10 lg:mt-0">
         <h3 className="text-green-300">UI Design</h3>
         <h1 className="text-2xl text-white tracking-wider">
-          Don't let your idea get caught by others, design a prototype for your
-          idea
+          Don&apos;t let your idea get caught by others, design a prototype for
+          your idea
         </h1>
         <p className="text-md text-white/50">
           Delegate your ideas as quickly as possible, create beautiful designs
