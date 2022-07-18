@@ -59,33 +59,35 @@ export default function Navbar() {
       </nav>
 
       {/* overlay */}
-      {toggleMenu && (
-        <div className="w-full min-h-full z-50 fixed bg-indigo-500  flex flex-col p-10 space-y-7 backdrop-blur-md transition duration-500 ease-in">
-          <span
-            className="absolute right-10 top-10 cursor-pointer text-white"
-            onClick={() => setToggleMenu(false)}
+      <div
+        className={`${
+          toggleMenu ? "translate-x-0" : "-translate-x-full"
+        } w-full min-h-full z-50 fixed bg-indigo-500  flex flex-col p-10 space-y-7 backdrop-blur-md transition duration-200 ease-in`}
+      >
+        <span
+          className="absolute right-10 top-10 cursor-pointer text-white"
+          onClick={() => setToggleMenu(false)}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            strokeWidth={2}
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          </span>
-          <MenuItem href="/services" text="Services" />
-          <MenuItem href="/about" text="About" />
-          <MenuItem href="/how-we-work" text="How We Work" />
-          <MenuItem href="/project" text="Project" />
-        </div>
-      )}
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </span>
+        <MenuItem href="/services" text="Services" />
+        <MenuItem href="/about" text="About" />
+        <MenuItem href="/how-we-work" text="How We Work" />
+        <MenuItem href="/project" text="Project" />
+      </div>
     </>
   );
 }
