@@ -60,7 +60,7 @@ export default function Navbar() {
 
       {/* overlay */}
       {toggleMenu && (
-        <div className="w-full min-h-full z-50 fixed bg-indigo-500  flex flex-col p-10 space-y-7 backdrop-blur-md transition duration-200 ease-in">
+        <div className="w-full min-h-full z-50 fixed bg-indigo-500  flex flex-col p-10 space-y-7 backdrop-blur-md transition duration-500 ease-in">
           <span
             className="absolute right-10 top-10 cursor-pointer text-white"
             onClick={() => setToggleMenu(false)}
