@@ -27,9 +27,9 @@ export default function Navbar() {
         <Menu>
           <MenuItem href="/" text="Home" />
           <MenuItem href="/services" text="Services" />
-          <MenuItem href="/about" text="About" />
           <MenuItem href="/how-we-work" text="How We Work" />
           <MenuItem href="/project" text="Project" />
+          <MenuItem href="/about" text="About" />
         </Menu>
 
         <Link href="/contact">
@@ -85,10 +85,10 @@ export default function Navbar() {
           </svg>
         </span>
         <MenuItem href="/" text="Home" />
-        <MenuItem href="/services" text="Services" />
-        <MenuItem href="/about" text="About" />
         <MenuItem href="/how-we-work" text="How We Work" />
+        <MenuItem href="/services" text="Services" />
         <MenuItem href="/project" text="Project" />
+        <MenuItem href="/about" text="About" />
       </div>
     </>
   );
