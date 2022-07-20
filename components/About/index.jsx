@@ -3,7 +3,7 @@ import FirstStep from "./FirstStep";
 import SecondStep from "./SecondStep";
 import ThirdStep from "./ThirdStep";
 
-export default function About() {
+export default function AboutPages() {
   return (
     <>
       <Header />
