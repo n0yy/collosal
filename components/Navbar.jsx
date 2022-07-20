@@ -25,6 +25,7 @@ export default function Navbar() {
 
         {/* menu */}
         <Menu>
+          <MenuItem href="/" text="Home" />
           <MenuItem href="/services" text="Services" />
           <MenuItem href="/about" text="About" />
           <MenuItem href="/how-we-work" text="How We Work" />
@@ -62,7 +63,7 @@ export default function Navbar() {
       <div
         className={`${
           toggleMenu ? "translate-x-0" : "-translate-x-full"
-        } w-full min-h-full z-50 fixed bg-indigo-500  flex flex-col p-10 space-y-7 backdrop-blur-md transition duration-200 ease-in`}
+        } w-full min-h-full z-50 fixed bg-slate-900/70  flex flex-col p-10 space-y-7 backdrop-blur-md transition duration-200 ease-in`}
       >
         <span
           className="absolute right-10 top-10 cursor-pointer text-white"
@@ -83,6 +84,7 @@ export default function Navbar() {
             />
           </svg>
         </span>
+        <MenuItem href="/" text="Home" />
         <MenuItem href="/services" text="Services" />
         <MenuItem href="/about" text="About" />
         <MenuItem href="/how-we-work" text="How We Work" />
