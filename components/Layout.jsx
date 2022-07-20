@@ -7,7 +7,7 @@ export default function Layout({ children }) {
   return (
     <>
       <Navbar />
-      <main className="px-3 sm:px-36 pt-32 lg:pt-20 overflow-hidden">
+      <main className="px-5 sm:px-36 pt-32 lg:pt-20 overflow-hidden">
         <section>
           <motion.div
             className="absolute bg-orange-400/20 w-2/5 h-2/5 lg:h-96 rounded-full blur-3xl -z-50 left-0 bottom-9"
