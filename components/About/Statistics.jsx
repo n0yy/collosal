@@ -14,9 +14,12 @@ export default function Statistics() {
           In 3 years we reached 8 countries, 193 clients and earning $100k USD
         </h1>
       </div>
-      <div className="bg-white/5 w-full px-5 lg:px-12 gap-4 py-7 rounded flex flex-wrap items-center justify-between">
+      <div className="bg-white/5 w-full px-5 lg:px-12 gap-4 py-7 rounded block lg:flex items-center justify-between">
         {statistics.map((statistic, index) => (
-          <div className="flex items-center text-white space-x-7" key={index}>
+          <div
+            className="flex items-center text-white space-x-7 mb-5 lg:mb-0"
+            key={index}
+          >
             <Image
               src={statistic.imageUrl}
               alt={statistics.subText}

@@ -47,10 +47,10 @@ export default function OurTeam() {
           Meet the team! All creative people are here
         </h1>
       </div>
-      <div className="flex justify-between items-center flex-wrap gap-5">
+      <div className="flex justify-evenly items-center flex-wrap gap-5">
         {ourTeams.map((person, index) => (
           <div
-            className="text-white bg-white/5 w-fit rounded-b-lg shadow-xl"
+            className="text-white bg-white/5 w-56 lg:w-fit rounded-b-lg shadow-xl"
             key={index}
           >
             <Image
@@ -59,8 +59,8 @@ export default function OurTeam() {
               height={360}
               alt="Albert Flores"
             />
-            <div className="p-5">
-              <h5 className="text-xl">{person.name}</h5>
+            <div className="p-4 lg:p-5">
+              <h5 className="text-md lg:text-xl">{person.name}</h5>
               <h6 className="text-xs text-white/50">{person.job}</h6>
             </div>
           </div>

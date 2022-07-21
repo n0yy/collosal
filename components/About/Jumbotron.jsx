@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Jumbotron() {
   return (
-    <section className="block lg:flex items-center justify-around py-3 pb-20 lg:pb-0 lg:py-16 border-b-[1px] border-white/25">
+    <section className="flex flex-wrap items-center justify-evenly py-3 pb-20 lg:py-16 border-b-[1px] border-white/25">
       <Image src="/about-hero.png" width={300} height={410} alt="An image" />
       <div className="w-full lg:w-5/12 space-y-3 mt-10 lg:mt-0">
         <h3 className="text-green-300">ABOUT</h3>
