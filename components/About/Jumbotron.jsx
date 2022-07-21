@@ -10,10 +10,10 @@ export default function Jumbotron() {
           We are creative, smart and hardworking people
         </h1>
         <p className="text-white/50 tracking-wider">
-          Several creative people gather in the same place - that's Collosal. We
-          collaborate to produce the best results, loved by clients and
-          comfortable for users. Here we maintain togetherness even though with
-          different backgrounds, all the people here are already experts in
+          Several creative people gather in the same place - that&apos;s
+          Collosal. We collaborate to produce the best results, loved by clients
+          and comfortable for users. Here we maintain togetherness even though
+          with different backgrounds, all the people here are already experts in
           their respective fields.
         </p>
       </div>
