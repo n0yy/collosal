@@ -12,7 +12,7 @@ export default function StepSection({
     <section
       className={`${
         layout === "start" && "flex-row-reverse"
-      } flex flex-col lg:flex-row items-center justify-between my-32`}
+      } flex flex-col lg:flex-row items-center justify-evenly my-32`}
     >
       <Image src={imageUrl} width={400} height={400} alt={subtitle} />
       <div className="space-y-4 text-white w-full lg:w-5/12 py-10 lg:py-0">
